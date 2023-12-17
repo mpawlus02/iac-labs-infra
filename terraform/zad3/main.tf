@@ -43,4 +43,3 @@ resource "docker_container" "db" {
     external = 5432
   }
 }
-}
