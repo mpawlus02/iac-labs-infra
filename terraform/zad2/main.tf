@@ -21,11 +21,11 @@ resource "docker_container" "nginx" {
   ports {
     internal = 80
     external = 8080
-  }
+}
 resource "docker_tag" "zad1" {
   source_image = docker_image.nginx.name
   target_image = "ARIT1"
-  }
+}
 }
 
 output "address" {
