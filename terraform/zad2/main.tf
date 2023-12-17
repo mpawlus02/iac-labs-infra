@@ -25,7 +25,7 @@ resource "docker_container" "nginx" {
 }
 resource "docker_tag" "zad1" {
   source_image = docker_image.nginx.name
-  target_image = "ARIT1"
+  target_image = "arit1"
 }
 
 
