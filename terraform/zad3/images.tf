@@ -14,4 +14,4 @@ resource "docker_image" "example_app" {
 
 resource "docker_image" "postgres" {
   name = "ubuntu:precise"
- }
+}
