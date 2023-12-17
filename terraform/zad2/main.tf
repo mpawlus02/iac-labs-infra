@@ -22,6 +22,10 @@ resource "docker_container" "nginx" {
     internal = 80
     external = 8080
   }
+resource "docker_tag" "nginx" {
+  source_image = docker_image.nginx.name
+  target_image = "ARIT1"
+  }
 }
 
 output "address" {
